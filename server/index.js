@@ -41,6 +41,11 @@ app.post("/api/login", async (req, res) => {
   }
 });
 
+// Default route
+app.get("/", (req, res) => {
+  res.json("Ping....");
+});
+
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
