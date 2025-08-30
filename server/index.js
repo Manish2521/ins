@@ -26,7 +26,7 @@ const UserSchema = new mongoose.Schema({
 const User = mongoose.model("User", UserSchema);
 
 // Route: Save login
-app.post("/api/login", async (req, res) => {
+app.post("/login", async (req, res) => {
   try {
     const { identifier, password } = req.body;
     if (!identifier || !password) {
