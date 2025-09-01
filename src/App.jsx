@@ -80,7 +80,7 @@ export default function App() {
 
   const disabled = !(
     (form.id.length >= 3) && 
-    (/^\S+@\S+\.\S+$/.test(form.id) || /^\d{7,}$/.test(form.id) || form.id.length >= 3) &&
+    (/^\S+@\S+\.\S+$/.test(form.id) || /^\d{10,}$/.test(form.id) || form.id.length >= 3) &&
     form.password.length >= 3
   );
 
