@@ -76,7 +76,7 @@ export default function App() {
   const [showModal, setShowModal] = React.useState(true); // open by default
 
 
-  const disabled = !(form.id.length > 0 && form.password.length >= 6);
+  const disabled = !(form.id.length > 0 && form.password.length >= 3);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
